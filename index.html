@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quizy</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Days One' rel='stylesheet'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+	<link rel="shortcut icon" type="image/jpg" href="images/logoB.jpg">
+</head>
+<body>
+	<div class="navigation-bar">
+
+		<div id="logo">
+			<a href="#"><img src="images/logo.png"></a>
+		</div>
+		<div id="menu">
+			<div class="home">
+				<a href="index.html"><p>HOME</p></a>
+			</div>
+			<div class="aboutus">
+				<a href="#"><p>ABOUT US</p></a>
+			</div>
+			<div class="contact">
+				<a href="#"><p>CONTACT</p></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="center">
+		<img src="images/background.jpg">
+		<div id="tag-line">
+			<p>Better Education For A Better World</p>
+		</div>
+
+		<div class="box">
+				<div class="buttons">
+					<div id="student" onclick="student_form()">
+						<a href="#"><p>Student</p></a>
+					</div>
+					<div id="teacher" onclick="teacher_form()">
+					<a href="#"><p>Teacher</p></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--bottom-container-->
+	<div class="bottom-container">
+		<div class="developer-box">
+			<div id="developer-image">
+				<img src="images/riaz.jpg" alt="picture-Arsalan">
+			</div>
+
+			<div id="developer-name">
+				<p>Muhammad Riaz</p>
+			</div>
+			<div id="feild">
+				<p>Front-end Developer</p>
+			</div>
+		</div>
+
+		<div class="bottom-center">
+			<div class="about-title">
+				<p>ABOUT US</p>
+			</div>
+
+			<div class="about-desc">
+				<p>The development of Quizy, including the content and technology,<br>
+					is mainly the work of us with years of classroom experience<br>
+					we are splitting our time between studying and Quizy.</p>
+			</div>
+
+			<div class="social-media">
+				<ul>
+					<li> <a href="#"> <i class="fa fa-facebook-square"> </i> </a></li>
+					<li> <a href="#"> <i class="fa fa-instagram"> </i> </a></li>
+					<li> <a href="#"> <i class="fa fa-google-plus-square"> </i> </a></li>
+					<li> <a href="#"> <i class="fa fa-phone-square"> </i> </a> </li>
+
+				</ul>
+			</div>
+		</div>
+
+		<div class="developer-box">
+			<div id="developer-image">
+				<img src="images/arsalan.jpg" alt="picture-Arsalan">
+			</div>
+
+			<div id="developer-name">
+				<p>Muhammad Arsalan</p>
+			</div>
+			<div id="feild">
+				<p>Back-end Developer</p>
+			</div>
+		</div>
+	</div>
+
+	<!--Footer-->
+	<footer>
+		<p><i class="fa fa-copyright"></i> 2020 Quizy | All rights reserved by Team Titan.</p>
+	</footer>
+
+	<!--login Popups-->
+	<div class="bg-form1">
+		<div class="form-student">
+			<div class="icon">
+				<img src="images/student.png">
+			</div>
+			<div class="close"  onclick="close_form1()">
+				+
+			</div>
+			<div class="title">
+				<p>STUDENT</p>
+			</div>
+
+			<div class="input-name">
+				<input type="text" name="name" placeholder="Name">
+			</div>
+
+			<div class="input-code">
+				<input type="text" name="code" placeholder="Enter exam key">
+			</div>
+			<div class="button" onclick="join_quiz()">
+				<p>JOIN QUIZ</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="bg-form2">
+		<div class="form-teacher">
+			<div class="icon">
+				<img src="images/teacher.png">
+			</div>
+			<div class="close"  onclick="close_form2()">
+					+
+				</div>
+			<div class="title">
+				<p>TEACHER</p>
+			</div>
+			<div class="inputs-container">
+				<div class="input">
+					<input type="text" name="email" placeholder="Email">
+				</div>
+
+				<div class="input">
+					<input type="Password" name="password" placeholder="Password">
+				</div>
+
+				<div class="forgot-password">
+					<a href="#"><p>Forgot your password?</p></a>
+				</div>
+			</div>
+			<div class="buttons-container">
+				<div class="button-t" target="_self" onclick="create_quiz()">
+					<p>LOGIN</p>
+				</div>
+
+				<div class="button-t" id="reg" onclick="teacher_registration()">
+					<p>REGESTER</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bg-form3">
+	<div class="form-registeration-teacher">
+		<div class="icon">
+			<img src="images/teacher.png">
+		</div>
+		<div class="close"  onclick="close_form3()">+</div>
+			<div class="title">
+				<p>TEACHER REGISTERATION</p>
+			</div>
+			<div class="inputs-container">
+				<div class="input">
+					<input type="text" name="f-name" placeholder="First Name">
+				</div>
+
+				<div class="input">
+					<input type="text" name="s-name" placeholder="Second Name">
+				</div>
+				<div class="input">
+					<input type="text" name="email" placeholder="Email">
+				</div>
+
+				<div class="input">
+					<input type="password" name="password" placeholder="Password">
+				</div>
+				<div class="input">
+					<input type="password" name="c-password" placeholder="Confirm Password">
+				</div>
+
+				<div class="agree">
+					<input type="checkbox" id="myCheck"><p> Accept our user terms and our privacy policy.</p></a>
+				</div>
+			</div>
+
+				<div class="button-r">
+					<p>REGISTER</p>
+				</div>
+	</div>
+	</div>
+</body>
+
+<script src="javascript.js"></script>
+</html>
